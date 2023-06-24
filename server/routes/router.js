@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
             console.log('error making query: ', error);
             res.sendStatus(500);
         })
-});
+}); // end router.get
 
 // GET for specific id
 router.get('/id', (req, res) => {
@@ -48,7 +48,7 @@ router.get('/id', (req, res) => {
         console.log('error making database query: ', error);
         res.sendStatus(500);
     })
-})
+}) // end router.get for a specific id
 
 // POST
 // take post request from client and append the database
@@ -73,7 +73,7 @@ router.post('/', (req, res) => {
         // send client server error message
         res.sendStatus(500);
     });
-})
+}) // end router.post
 
 // PUT
 router.put('/:id', (req, res) => {
@@ -88,7 +88,7 @@ router.put('/:id', (req, res) => {
         console.log('Error in PUT request in router', error);
         res.sendStatus(500);
     });
-});
+}); // end router.put
 
 // DELETE
 router.delete('/:id', (req,res) => {
@@ -106,6 +106,6 @@ router.delete('/:id', (req,res) => {
         console.log('Error making query in router.delete: ', error);
         res.sendStatus(500);
     })
-})
+}) // end router.delete
 
 module.exports = router;

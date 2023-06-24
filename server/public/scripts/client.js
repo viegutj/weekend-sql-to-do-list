@@ -64,7 +64,7 @@ function getTasks() {
         // render task list
         render(response);
     })
-}
+} // end getTasks function
 
 // POST
 function addTask(newTask) {
@@ -85,7 +85,7 @@ function addTask(newTask) {
     }).catch((error) => {
         console.log('Error in POST request - addTask(): ', error);
     });
-}
+} // end addTask function
 
 // PUT
 // complete button handler

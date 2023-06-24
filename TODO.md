@@ -57,15 +57,15 @@ When the Task is created, it should be stored inside of a database (SQL)
     - [x] - Create PUT route in router.js
     - [x] - COMMIT!
 
-* [ ] When a Task is complete, its visual representation should change on the front end. 
+* [x] When a Task is complete, its visual representation should change on the front end. 
 For example, the background of the task container could change from gray to green. 
 The complete option should be  'checked off'. Each of these are accomplished in CSS, 
 but will need to hook into logic to know whether or not the task is complete.
-    - [ ] - Create styles.css file in public folder
-    - [ ] - CSS 'change class' when complete button is clicked - write in event handler function
-            in client.js
+    - [x] - Create styles.css file in public folder
+    - [x] - CSS 'change class' when complete button is clicked
+            - NOTE: ended up using a variable instead of jQuery method
 
-* [ ] Use CSS styling to move the aesthetic of the page beyond the vanilla HTML look:
-  - [ ] background color of the page
-  - [ ] font family and size
-  - [ ] text color & or background color of tasks *to show whether or not they have been completed*
+* [x] Use CSS styling to move the aesthetic of the page beyond the vanilla HTML look:
+  - [x] background color of the page
+  - [x] font family and size
+  - [x] text color & or background color of tasks *to show whether or not they have been completed*
