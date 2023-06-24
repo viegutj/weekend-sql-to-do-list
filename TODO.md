@@ -1,9 +1,9 @@
-Base Mode TODO
+***Base Mode TODO***
 
 **Here are the specific components for the challenge:**
-* [ ] Create a front end experience that allows a user to create a Task.
+* [x] Create a front end experience that allows a user to create a Task.
     - [x] - Create an HTML file
-    - [ ] - Add needed elements - remember to add id to each!
+    - [x] - Add needed elements - remember to add id to each!
         - [x] - h1: Weekend Project: SQL To-Do List
         - [x] - h2: Jonathan Viegut
         - [x] - h3: Add Task
@@ -12,7 +12,7 @@ Base Mode TODO
         - [x] - h3: to-do
         - [x] - ul: comment - tasks go here! (render() in client.js will add our rows of individualtasks)
     - [x] - Create a client.js file
-    - [ ] - Add event listeners
+    - [x] - Add event listeners
         - [x] - event listener for add tasks button 
         - [x] - event listener for complete button (event delegation!)
         - [x] - event listener for delete buttons ( event delegation!)
@@ -24,13 +24,15 @@ You will need to use this name in your database connection configuration on your
     - [x] - Create columns for database
 
 * [ ] Set up back-end folder system
+    - [x] - Create pool.js
+    - [ ] - Set up pool.js
+    - [ ] - COMMIT!
     - [x] - Create server.js
     - [ ] - Set up server.js
+    - [ ] - COMMIT!
     - [x] - Create modules folder
-    - [ ] - Create router.js
+    - [x] - Create router.js
     - [ ] - Set up router.js
-    - [ ] - Create pool.js
-    - [ ] - Set up pool.js
     - [ ] - COMMIT!
 
 * [ ] Whenever a Task is created the front end should refresh to show all tasks that need to be completed. 
