@@ -16,21 +16,17 @@ Base Mode TODO
         - [x] - event listener for add tasks button 
         - [x] - event listener for complete button (event delegation!)
         - [x] - event listener for delete buttons ( event delegation!)
-        - [ ] - COMMIT!
-    - [ ] - Create event listeners (functions)
-        - [ ] - Add add task button listener function
-        - [ ] - Add complete button listener function
-        - [ ] - Add delete button listener function
-        - [ ] - COMMIT!
+        - [x] - COMMIT!
 
 * [ ] Be sure to create a new database through Postico. Use the name `weekend-to-do-app`. 
 You will need to use this name in your database connection configuration on your server.
-    - [ ] - Create new database : `weekend-to-do-app`
+    - [x] - Create new database : `weekend-to-do-app`
+    - [x] - Create columns for database
 
 * [ ] Set up back-end folder system
-    - [ ] - Create server.js
+    - [x] - Create server.js
     - [ ] - Set up server.js
-    - [ ] - Create modules folder
+    - [x] - Create modules folder
     - [ ] - Create router.js
     - [ ] - Set up router.js
     - [ ] - Create pool.js
