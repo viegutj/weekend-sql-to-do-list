@@ -29,6 +29,28 @@ function handleDeleteButton() {
     console.log('delete-btn has been clicked!');
 } // end handleDeleteButton function
 
+// GET
+function getTasks() {
+    console.log('in getTasks()');
+    // AJAX call to server to get tasks
+    $.ajax({
+        type: 'GET',
+        url: '/todo'
+    }).then((response) => {
+        // create console log to make sure GET route is working
+        console.log('GET /todo response: ', response);
+        // render task list
+        render();
+    })
+}
+
+// POST
+
+// DELETE
+
+// PUT
+
+
 // Create Render Function
 function render(tasks){
     // empty the current list

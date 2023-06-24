@@ -18,7 +18,7 @@
         - [x] - event listener for delete buttons ( event delegation!)
         - [x] - COMMIT!
 
-* [ ] Be sure to create a new database through Postico. Use the name `weekend-to-do-app`. 
+* [x] Be sure to create a new database through Postico. Use the name `weekend-to-do-app`. 
 You will need to use this name in your database connection configuration on your server.
     - [x] - Create new database : `weekend-to-do-app`
     - [x] - Create columns for database
@@ -37,7 +37,7 @@ You will need to use this name in your database connection configuration on your
 
 * [ ] Whenever a Task is created the front end should refresh to show all tasks that need to be completed. 
 When the Task is created, it should be stored inside of a database (SQL)
-    - [ ] - Create GET route in client.js
+    - [x] - Create GET route in client.js
     - [ ] - Create GET route in router.js
     - [ ] - COMMIT!
     - [ ] - Create POST route in client.js
