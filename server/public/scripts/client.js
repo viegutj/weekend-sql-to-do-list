@@ -18,6 +18,15 @@ function onReady() {
 // task button handler
 function handleAddTaskButton(){
     console.log('add-task-btn has been clicked!');
+
+    // store user values in a variable
+    let taskToAdd = {
+        task: $('#user-input').val()
+    };
+
+    // call POST function addTasks() to add to database
+    addTask(taskToAdd);
+
 } // end handleAddTaskButton function
 
 // complete button handler
