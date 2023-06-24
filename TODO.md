@@ -46,7 +46,7 @@ When the Task is created, it should be stored inside of a database (SQL)
     - [x] - Create render() function in client.js
     - [x] - COMMIT!
 
-* [ ] Each Task should have an option to 'Complete' or 'Delete'.
+* [x] Each Task should have an option to 'Complete' or 'Delete'.
     - [x] - Create GET route for a specific id
     - [x] - Create DELETE route in client.js
         Deleting a Task should remove it both from the front end as well as the Database.
@@ -55,7 +55,7 @@ When the Task is created, it should be stored inside of a database (SQL)
     - [x] - Create PUT route in client.js
         Whether or not a Task is complete should also be stored in the database.
     - [x] - Create PUT route in router.js
-    - [ ] - COMMIT!
+    - [x] - COMMIT!
 
 * [ ] When a Task is complete, its visual representation should change on the front end. 
 For example, the background of the task container could change from gray to green. 

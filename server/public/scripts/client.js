@@ -119,13 +119,19 @@ function render(tasks){
     // loop through tasks and append them to the DOM
     for (let i = 0; i < tasks.length; i++) {
         const task = tasks[i];
+        let someClass; 
+        if (task.isCompleted == true) {
+            someClass = 'completed'
+        }else{
+            someClass = ''
+        }
         $('#task-list').append(`
-        <tr data-id=${task.id}>
-            <td>${task.task}</td>
-            <td>${task.isCompleted}
-            <td><button class="complete-btn">Mark Complete</button></td>
-            <td><button class="delete-btn">Delete</button></td>
+        <tr data-id=${task.id} class="${someClass}">
+        <td>${task.task}</td>
+        <td>${task.isCompleted}
+        <td><button class="complete-btn">Mark Complete</button></td>
+        <td><button class="delete-btn">Delete</button></td>
         </tr>
-        `)
+        `);
     }
 }; // end Render Function
