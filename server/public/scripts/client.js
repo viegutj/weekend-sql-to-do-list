@@ -125,13 +125,24 @@ function render(tasks){
         }else{
             someClass = ''
         }
+        if (task.isCompleted == true) {
         $('#task-list').append(`
         <tr data-id=${task.id} class="${someClass}">
-        <td>${task.task}</td>
-        <td>${task.isCompleted}
-        <td><button class="complete-btn">Mark Complete</button></td>
-        <td><button class="delete-btn">Delete</button></td>
+            <td>${task.task}</td>
+            <td>${task.isCompleted}
+            <td>✅</td>
+            <td><button class="delete-btn">Delete</button></td>
         </tr>
         `);
+        }else{
+        $('#task-list').append(`
+        <tr data-id=${task.id} class="${someClass}">
+            <td>${task.task}</td>
+            <td>${task.isCompleted}
+            <td><button class="complete-btn">Mark Complete</button></td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
+        `);
+        }
     }
 }; // end Render Function
