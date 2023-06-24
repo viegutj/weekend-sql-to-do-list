@@ -76,6 +76,26 @@ function addTask(newTask) {
 }
 
 // DELETE
+// delete a koala with a specified ID from client
+function deleteTask(){
+    console.log('in deleteTask() function on client: ', $(this));
+
+    // use DOM traversal to get the data-id of the task table row
+    const taskId = $(this).parent().parent().data("id");
+
+    //send an AJAX delete request to the server
+    $.ajax({
+        method: 'DELETE',
+        url: `/todo/${taskId}`
+    }).then ((response) => {
+        console.log('deleted a task');
+        getTasks();
+    }).catch((error) => {
+        console.log('Error in delete request - deleteTask()', error);
+        // Notifies the user with an alert window
+        alert('error with deleting a task!')
+    })
+}
 
 // PUT
 

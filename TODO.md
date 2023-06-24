@@ -35,21 +35,23 @@ You will need to use this name in your database connection configuration on your
     - [x] - Set up router.js
     - [x] - COMMIT!
 
-* [ ] Whenever a Task is created the front end should refresh to show all tasks that need to be completed. 
+* [x] Whenever a Task is created the front end should refresh to show all tasks that need to be completed. 
 When the Task is created, it should be stored inside of a database (SQL)
     - [x] - Create GET route in client.js
     - [x] - Create GET route in router.js
     - [x] - COMMIT!
     - [x] - Create POST route in client.js
     - [x] - Create POST route in router.js
-    - [ ] - COMMIT!
-    - [ ] - Create render() function in client.js
-    - [ ] - COMMIT!
+    - [x] - COMMIT!
+    - [x] - Create render() function in client.js
+    - [x] - COMMIT!
 
 * [ ] Each Task should have an option to 'Complete' or 'Delete'.
-    - [ ] - Create DELETE route in client.js
+    - [x] - Create GET route for a specific id
+    - [x] - Create DELETE route in client.js
         Deleting a Task should remove it both from the front end as well as the Database.
-    - [ ] - Create DELETE route in router.js
+    - [x] - Create DELETE route in router.js
+    - [ ] - COMMIT!
     - [ ] - Create PUT route in client.js
         Whether or not a Task is complete should also be stored in the database.
     - [ ] - Create PUT route in router.js
