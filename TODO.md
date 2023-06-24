@@ -25,7 +25,7 @@ You will need to use this name in your database connection configuration on your
 
 * [ ] Set up back-end folder system
     - [x] - Create pool.js
-    - [ ] - Set up pool.js
+    - [x] - Set up pool.js
     - [ ] - COMMIT!
     - [x] - Create server.js
     - [ ] - Set up server.js
