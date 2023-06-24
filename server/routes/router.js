@@ -82,11 +82,11 @@ router.delete('/:id', (req,res) => {
     let idToDelete = req.params.id;
     // use query parameterization to protect the
     // database from SQL injection
-    let query = `DELETE FROM "weekend-to-do-list-table" WHERE "id"=$1;`;
+    let queryText = `DELETE FROM "weekend-to-do-app-table" WHERE "id"=$1;`;
     // use pool to communicate with database
-    pool.query(query, [idToDelete])
+    pool.query(queryText, [idToDelete])
     .then((results) => {
-        console.log('task deleted');
+        console.log('task deleted', results);
         // Send 'ok' to client
         res.sendStatus(200);
     }).catch((error) => {
