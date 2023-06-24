@@ -10,6 +10,7 @@ function onReady() {
     $('#task-list').on('click', '.complete-btn', handleCompleteButton);
     $('#task-list').on('click', '.delete-btn', handleDeleteButton);
     // add GET function to retrieve
+    getTasks();
 } // end onReady function
 
 // add event handlers
@@ -40,7 +41,7 @@ function getTasks() {
         // create console log to make sure GET route is working
         console.log('GET /todo response: ', response);
         // render task list
-        render();
+        render(response);
     })
 }
 
@@ -53,17 +54,18 @@ function getTasks() {
 
 // Create Render Function
 function render(tasks){
+    console.log('tasks are: ', tasks);
     // empty the current list
     $('#task-list').empty();
     // loop through tasks and append them to the DOM
     for (let i = 0; i < tasks.length; i++) {
         const task = tasks[i];
         $('#task-list').append(`
-        <li data-id=${task.id}>
-        ${task.task}
-        <button class="complete-btn">Complete</button>
-        <button class="delete-btn">Delete</button>
-        </li>
+        <tr data-id=${task.id}>
+            <td>${task.task}</td>
+            <td><button class="complete-btn">Mark Complete</button></td>
+            <td><button class="delete-btn">Delete</button></td>
+        </tr>
         `)
     }
 }; // end Render Function

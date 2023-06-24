@@ -38,8 +38,8 @@ You will need to use this name in your database connection configuration on your
 * [ ] Whenever a Task is created the front end should refresh to show all tasks that need to be completed. 
 When the Task is created, it should be stored inside of a database (SQL)
     - [x] - Create GET route in client.js
-    - [ ] - Create GET route in router.js
-    - [ ] - COMMIT!
+    - [x] - Create GET route in router.js
+    - [x] - COMMIT!
     - [ ] - Create POST route in client.js
     - [ ] - Create POST route in router.js
     - [ ] - COMMIT!

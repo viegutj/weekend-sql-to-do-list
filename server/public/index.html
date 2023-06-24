@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,27 @@
     <script src="scripts/client.js"></script>
     <title>weekend-sql-to-do-list</title>
 </head>
+
 <body>
     <h1>Weekend Project: SQL To-Do List</h1>
     <h2>Jonathan Viegut</h2>
     <h3>Add Task</h3>
-    <input type="text" placeholder="Write Task Here" id="">
+    <input type="text" placeholder="Write Task Here" id="user-input">
     <button id="add-task-btn">Add Task</button>
-    <h3>TODO Task List</h3>
-    <ul id="task-list">
-        <!-- tasks appended here as list items -->
-    </ul>
+    <section>
+        <h3>TODO Task List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Complete? (Y/N)</th>
+                    <th>Mark Complete</th>
+                </tr>
+            </thead>
+            <tbody id="task-list">
+                <!-- tasks appended here as list items -->
+            </tbody>
+        </table>
+    </section>
 </body>
 </html>
