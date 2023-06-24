@@ -14,8 +14,8 @@ Base Mode TODO
     - [x] - Create a client.js file
     - [ ] - Add event listeners
         - [x] - event listener for add tasks button 
-        - [ ] - event listener for complete button (event delegation!)
-        - [ ] - event listener for delete buttons ( event delegation!)
+        - [x] - event listener for complete button (event delegation!)
+        - [x] - event listener for delete buttons ( event delegation!)
         - [ ] - COMMIT!
     - [ ] - Create event listeners (functions)
         - [ ] - Add add task button listener function
