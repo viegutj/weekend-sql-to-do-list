@@ -29,10 +29,6 @@ function handleAddTaskButton(){
 
 } // end handleAddTaskButton function
 
-// complete button handler
-function handleCompleteButton() {
-    console.log('complete-btn has been clicked!');
-} // end handleCompleteButton function
 
 // DELETE
 // delete button handler
@@ -74,7 +70,7 @@ function getTasks() {
 function addTask(newTask) {
     console.log('in addTask(); newTask is: ', newTask );
     // AJAX call to server/router to POST user data
-
+    
     $.ajax({
         method: 'POST',
         url: '/todo',
@@ -92,6 +88,27 @@ function addTask(newTask) {
 }
 
 // PUT
+// complete button handler
+function handleCompleteButton() {
+    console.log('complete-btn has been clicked!');
+    console.log('this is: ', $(this));
+    const taskId = $(this).parent().parent().data('id');
+    console.log('taskId is: ', taskId);
+
+    $.ajax({
+        method: 'PUT',
+        url: `/todo/${taskId}`
+    }).then((response) => {
+        console.log('Task completed! Response: ', response);
+        // is this what our GET with specific ID is for in
+        // our router
+        getTasks(response);
+    }).catch((error) => {
+        console.log('Error marking complete in PUT', error);
+        alert('Complete status NOT updated!');
+        res.sendStatus(500);
+    })
+} // end handleCompleteButton function
 
 
 // Create Render Function
@@ -105,6 +122,7 @@ function render(tasks){
         $('#task-list').append(`
         <tr data-id=${task.id}>
             <td>${task.task}</td>
+            <td>${task.isCompleted}
             <td><button class="complete-btn">Mark Complete</button></td>
             <td><button class="delete-btn">Delete</button></td>
         </tr>

@@ -76,6 +76,19 @@ router.post('/', (req, res) => {
 })
 
 // PUT
+router.put('/:id', (req, res) => {
+    let idToUpdate = req.params.id;
+    let queryText = `UPDATE "weekend-to-do-app-table" SET "isCompleted" = 'true' WHERE "id"=$1;`;
+    // access pool to communicate with database
+    pool.query(queryText, [idToUpdate])
+    .then((results) => {
+        console.log('Task is completed; PUT request in router successful!', results);
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log('Error in PUT request in router', error);
+        res.sendStatus(500);
+    });
+});
 
 // DELETE
 router.delete('/:id', (req,res) => {

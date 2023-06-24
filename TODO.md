@@ -52,9 +52,9 @@ When the Task is created, it should be stored inside of a database (SQL)
         Deleting a Task should remove it both from the front end as well as the Database.
     - [x] - Create DELETE route in router.js
     - [x] - COMMIT!
-    - [ ] - Create PUT route in client.js
+    - [x] - Create PUT route in client.js
         Whether or not a Task is complete should also be stored in the database.
-    - [ ] - Create PUT route in router.js
+    - [x] - Create PUT route in router.js
     - [ ] - COMMIT!
 
 * [ ] When a Task is complete, its visual representation should change on the front end. 
