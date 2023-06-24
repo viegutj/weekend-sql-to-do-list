@@ -40,8 +40,8 @@ When the Task is created, it should be stored inside of a database (SQL)
     - [x] - Create GET route in client.js
     - [x] - Create GET route in router.js
     - [x] - COMMIT!
-    - [ ] - Create POST route in client.js
-    - [ ] - Create POST route in router.js
+    - [x] - Create POST route in client.js
+    - [x] - Create POST route in router.js
     - [ ] - COMMIT!
     - [ ] - Create render() function in client.js
     - [ ] - COMMIT!

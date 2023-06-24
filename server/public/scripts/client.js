@@ -46,6 +46,25 @@ function getTasks() {
 }
 
 // POST
+function addTask(newTask) {
+    console.log('in addTask(); newTask is: ', newTask );
+    // AJAX call to server/router to POST user data
+
+    $.ajax({
+        method: 'POST',
+        url: '/todo',
+        data: newTask
+    }).then((response) => {
+        //Empty the input values
+        $('#user-input').val(''),
+        // use GET route to populate task-list
+        getTasks(response);
+        console.log('My response in POST request: ', response);
+        // catch any errors
+    }).catch((error) => {
+        console.log('Error in POST request - addTask(): ', error);
+    });
+}
 
 // DELETE
 
