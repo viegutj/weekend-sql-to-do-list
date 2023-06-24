@@ -23,17 +23,17 @@ You will need to use this name in your database connection configuration on your
     - [x] - Create new database : `weekend-to-do-app`
     - [x] - Create columns for database
 
-* [ ] Set up back-end folder system
+* [x] Set up back-end folder system
     - [x] - Create pool.js
     - [x] - Set up pool.js
     - [x] - COMMIT!
     - [x] - Create server.js
-    - [ ] - Set up server.js
-    - [ ] - COMMIT!
+    - [x] - Set up server.js
+    - [x] - COMMIT!
     - [x] - Create modules folder
     - [x] - Create router.js
-    - [ ] - Set up router.js
-    - [ ] - COMMIT!
+    - [x] - Set up router.js
+    - [x] - COMMIT!
 
 * [ ] Whenever a Task is created the front end should refresh to show all tasks that need to be completed. 
 When the Task is created, it should be stored inside of a database (SQL)

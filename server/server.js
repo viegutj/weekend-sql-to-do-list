@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('server/public'));
 
 // ROUTES
-app.use('/todo', todoRouter);
+app.use('/todo', router);
 
 // turn the key! start listening for requests
 app.listen(PORT, () => {
