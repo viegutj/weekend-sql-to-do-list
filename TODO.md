@@ -70,6 +70,8 @@ but will need to hook into logic to know whether or not the task is complete.
   - [x] font family and size
   - [x] text color & or background color of tasks *to show whether or not they have been completed*
 
+-------------------------------------------------------------
+
 ### Stretch Mode TODO ###
 
 ## Stretch Goals
@@ -80,7 +82,7 @@ For each of your strech goals, you will be practicing git branching. Please refe
 
     - [x]  Add Bootstrap to the front end and style it up!
       -  [x] Buttons -- make the creation buttons and completion buttons green and the delete red.
-      -   [ ] Inputs -- make your text inputs styled in the bootstrap way
+      -   [x] Inputs -- make your text inputs styled in the bootstrap way
       -   [ ] Responsive -- make your app responsive to different screen sizes --  [ ] check out the [Layout](https://getbootstrap.com/docs/4.1/layout/overview/) section
 
 - `feature-confirm-delete`  USE THIS BRANCH NAME
