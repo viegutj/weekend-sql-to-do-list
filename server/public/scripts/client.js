@@ -7,8 +7,8 @@ function onReady() {
     console.log('jQuery is ready');
     // add event listeners
     $('#add-task-btn').on('click', handleAddTaskButton);
-    $('#task-list').on('click', '.complete-btn', handleCompleteButton);
-    $('#task-list').on('click', '.delete-btn', handleDeleteButton);
+    $('#task-list').on('click', ".btn-success", handleCompleteButton);
+    $('#task-list').on('click', ".btn-danger", handleDeleteButton);
     // add GET function to retrieve
     getTasks();
 } // end onReady function
@@ -125,22 +125,27 @@ function render(tasks){
         }else{
             someClass = ''
         }
-        if (task.isCompleted == true) {
+        if (task.isCompleted) {
         $('#task-list').append(`
         <tr data-id=${task.id} class="${someClass}">
             <td>${task.task}</td>
             <td>${task.isCompleted}
             <td>✅</td>
-            <td><button class="delete-btn">Delete</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
         </tr>
         `);
         }else{
+            // How do I get the class of mark complete button
+                // to be "btn btn-success" for bootstrap formatting,
+                // while keeping functionality the same?
+            // Same problem for delete button, needed class for 
+                // bootstrap is "btn btn-danger".
         $('#task-list').append(`
         <tr data-id=${task.id} class="${someClass}">
             <td>${task.task}</td>
             <td>${task.isCompleted}
-            <td><button class="complete-btn">Mark Complete</button></td>
-            <td><button class="delete-btn">Delete</button></td>
+            <td><button class="btn btn-success">Mark Complete</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
         </tr>
         `);
         }

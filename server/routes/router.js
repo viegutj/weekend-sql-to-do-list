@@ -8,7 +8,7 @@ const router = express.Router();
     // GET all tasks from the database
 router.get('/', (req, res) => {
     // write SQL query and save that in a variable
-    let queryText = 'SELECT * FROM "weekend-to-do-app-table";';
+    let queryText = 'SELECT * FROM "weekend-to-do-app-table" ORDER BY ASC;';
 
     // send SQL query to the database using pool.query
     pool.query(queryText)
