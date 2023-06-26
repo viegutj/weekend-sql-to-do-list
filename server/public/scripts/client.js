@@ -129,7 +129,7 @@ function render(tasks){
         $('#task-list').append(`
         <tr data-id=${task.id} class="${someClass}">
             <td>${task.task}</td>
-            <td>${task.isCompleted}
+            <td>${task.date}</td>
             <td>✅</td>
             <td><button class="btn btn-danger">Delete</button></td>
         </tr>
@@ -143,7 +143,7 @@ function render(tasks){
         $('#task-list').append(`
         <tr data-id=${task.id} class="${someClass}">
             <td>${task.task}</td>
-            <td>${task.isCompleted}
+            <td>${task.date}</td>
             <td><button class="btn btn-success">Mark Complete</button></td>
             <td><button class="btn btn-danger">Delete</button></td>
         </tr>

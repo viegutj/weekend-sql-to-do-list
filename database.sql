@@ -9,3 +9,6 @@ INSERT INTO "weekend-to-do-app-table"
 VALUES
 ('buy groceries'),
 ('eat veggies');
+
+ALTER TABLE "weekend-to-do-app-table"
+ADD "date" DATE DEFAULT current_date;
