@@ -8,7 +8,11 @@ const router = express.Router();
     // GET all tasks from the database
 router.get('/', (req, res) => {
     // write SQL query and save that in a variable
-    let queryText = 'SELECT * FROM "weekend-to-do-app-table";';
+    let queryText = `
+    SELECT "id", "task", "isCompleted" , to_char("date", 'Mon DD, YYYY') AS "date"
+    FROM "weekend-to-do-app-table"
+    ORDER BY "id" ASC;
+    `;
 
     // send SQL query to the database using pool.query
     pool.query(queryText)
@@ -41,7 +45,7 @@ router.get('/id', (req, res) => {
     .then((result) => {
         // result.rows is where the desired part of the
         // result/response is
-        console.log(`Song with id of ${idToGet}`, result.rows);
+        console.log(`task with id of ${idToGet}`, result.rows);
         //send data back to client
         res.sendStatus(200);
     }).catch((error) => {
