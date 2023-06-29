@@ -45,7 +45,7 @@ router.get('/id', (req, res) => {
     .then((result) => {
         // result.rows is where the desired part of the
         // result/response is
-        console.log(`Song with id of ${idToGet}`, result.rows);
+        console.log(`task with id of ${idToGet}`, result.rows);
         //send data back to client
         res.sendStatus(200);
     }).catch((error) => {
