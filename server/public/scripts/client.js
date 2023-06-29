@@ -33,6 +33,9 @@ function handleAddTaskButton(){
 // DELETE
 // delete button handler
 function handleDeleteButton() {
+    if(confirm('Are you sure you would like to delete?')==false){
+        return
+    }else{
     console.log('delete-btn has been clicked!');
     // use DOM traversal to get the data-id of the task table row
     const taskId = $(this).parent().parent().data("id");
@@ -49,6 +52,7 @@ function handleDeleteButton() {
         // Notifies the user with an alert window
         alert('error with deleting a task!')
     })
+}
 } // end handleDeleteButton function
 
 // GET
